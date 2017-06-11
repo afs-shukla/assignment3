@@ -1,1 +1,7 @@
-<div class="loader"></div>
+<div >
+<li ng-repeat="item in dctrl.menuList">
+        {{item.name}} , {{item.short_name}} , {{item.description}}
+        <button class="btn btn-primary" ng-click="dctrl.onRemove({index:$index});" > Don't want this one!" </button>
+      </li>
+
+</div>
